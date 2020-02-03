@@ -1,0 +1,31 @@
+#include <iostream>
+#include <map>
+
+class Person{
+	string  name;
+	int age;
+	
+	public:
+	
+	Person(string name, int age):
+		name(name), age(age) {
+		}
+		
+		void print(){
+			cout << name << " :"  << age <<endl;
+		}
+};
+
+
+int main(){
+	
+	map<int, Person> people;
+	
+	people[0] = person("Mike", 40);
+	peopele[1] = person("vicky", 30);
+	people[2] = person("Raj", 20);
+	
+	for(map<int, person> :: iterator it = people.begin(); it != people.end(); it++){
+		it-> second.print;
+	}
+		
